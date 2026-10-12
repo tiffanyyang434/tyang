@@ -56,6 +56,17 @@ h1 em, .statement h2 span { color: var(--coral); font-family: var(--display); fo
 .experience-body h2 { margin: 0 0 12px; font-size: clamp(24px, 3vw, 38px); line-height: 1.1; letter-spacing: -.04em; }
 .experience-body p { margin: 0 0 12px; color: var(--muted); line-height: 1.7; max-width: 720px; }
 .experience-body ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.8; }
+.section-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+.skills-grid, .project-list { display: grid; gap: 22px; }
+.skills-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.project-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.skill-card, .project-card { background: rgba(23, 33, 27, 0.02); border: 1px solid var(--line); border-radius: 24px; padding: 24px; }
+.skill-card h3, .project-card h3 { margin: 0 0 12px; font-size: clamp(22px, 2vw, 30px); letter-spacing: -.04em; }
+.skill-card p, .project-card p { margin: 0; color: var(--muted); line-height: 1.7; }
+.skill-pill { display: inline-block; margin-bottom: 18px; padding: 6px 9px; background: var(--lime); font: 700 11px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.project-card .meta { display: block; margin-bottom: 10px; color: var(--muted); font: 500 12px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.project-card a, .contact-list a { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-weight: 800; }
+.contact-list { display: grid; gap: 16px; }
 .site-footer { justify-content: space-between; gap: 20px; min-height: 90px; border-top: 1px solid var(--line); color: var(--muted); font: 11px var(--mono); }
 .reveal { opacity: 0; transform: translateY(20px); animation: rise .8s ease forwards; }
 .reveal-delay { animation-delay: .18s; }
